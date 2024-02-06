@@ -8,6 +8,7 @@ credentials:
           scope: GLOBAL
           username: "itt"
 jenkins:
+  systemMessage: "This Jenkins instance is Configured by th Configuration as Code plugin"
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
