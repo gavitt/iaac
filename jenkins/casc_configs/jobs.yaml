@@ -1,0 +1,13 @@
+jobs:
+  - script: >
+      job('example-job') {
+        scm {
+          git('https://github.com/user/repo.git')
+        }
+        triggers {
+          scm('H/15 * * * *')
+        }
+        steps {
+          shell('echo Hello, World!')
+        }
+      }
